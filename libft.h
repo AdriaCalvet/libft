@@ -13,18 +13,22 @@
 # ifndef LIBFT
 # define LIBFT
 
-//Parte 1
-int ft_isalpha(int c);
-
-
-//Parte 2
-
-
-//Parte Bonus
-typedef struct s_list
+/* typedef struct s_list
 {
 void *content;
 struct s_list *next;
 } t_list;
-    //Funciones bonus
+ */
+//Parte 1
+int ft_isalpha(int c);
+int ft_isdigit(int c);
+int ft_isalnum(int c);
+int ft_isascii(int c);
+int ft_isprint(int c);
+int ft_strlen(const char *s);
+
+//Parte 2
+
+
+//Funciones bonus
 #endif
