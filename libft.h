@@ -13,12 +13,12 @@
 # ifndef LIBFT
 # define LIBFT
 
-/* typedef struct s_list
+typedef struct s_list
 {
 void *content;
 struct s_list *next;
 } t_list;
- */
+
 //Parte 1
 int ft_isalpha(int c);
 int ft_isdigit(int c);
