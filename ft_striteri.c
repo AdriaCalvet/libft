@@ -1,20 +1,19 @@
 
 #include "libft.h"
 
-char *ft_strmap(char const *s, char (*f)(char))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    char *str;
-    int i;
+    int		i;
+    int		len;
 
-    str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
-    if (!str)
-        return (NULL);
     i = 0;
-    while (s[i])
+    if (s && f)
     {
-        str[i] = f(s[i]);
-        i++;
+        len = ft_strlen(s);
+        while (i < len)
+        {
+            f(i, &s[i]);
+            i++;
+        }
     }
-    str[i] = '\0';
-    return (str);
 }
