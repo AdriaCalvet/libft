@@ -6,7 +6,7 @@
 /*   By: acalvet <acalvet@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 18:09:41 by acalvet           #+#    #+#             */
-/*   Updated: 2024/01/15 18:10:36 by acalvet          ###   ########.fr       */
+/*   Updated: 2024/01/26 12:50:46 by acalvet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_tolower(int c)
 {
-	if(c >= 'A' && c <= 'Z')
-		return((int)c + 32);
+	if (c >= 'A' && c <= 'Z')
+		return ((int)c + 32);
 	else
-		return(c);
+		return (c);
 }

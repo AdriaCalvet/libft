@@ -6,7 +6,7 @@
 /*   By: acalvet <acalvet@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 17:49:12 by acalvet           #+#    #+#             */
-/*   Updated: 2024/01/15 17:53:29 by acalvet          ###   ########.fr       */
+/*   Updated: 2024/01/26 12:45:18 by acalvet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_toupper(int c)
 {
-	if(c >= 'a' && c <= 'z')
-		return((int)c - 32);
+	if (c >= 'a' && c <= 'z')
+		return ((int)c - 32);
 	else
-		return(c);
+		return (c);
 }

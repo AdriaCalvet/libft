@@ -6,7 +6,7 @@
 /*   By: acalvet <acalvet@student.42barcelona.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 18:49:30 by acalvet           #+#    #+#             */
-/*   Updated: 2024/01/15 18:49:33 by acalvet          ###   ########.fr       */
+/*   Updated: 2024/01/26 12:50:01 by acalvet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,16 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-    char *last;
+	int	i;
 
-    last = '\0';
-    if (!str)
-        return ('\0');
-    while (*str)
-    {
-        if (*str == c)
-            last = (char *)str;
-        str++;
-    }
-    if (*str == c)
-        return ((char *)str);
-    return (last);
+	i = 0;
+	while (str[i])
+		i++;
+	while (i >= 0)
+	{
+		if (str[i] == (char)c)
+			return ((char *)(str + i));
+		i--;
+	}
+	return (NULL);
 }
